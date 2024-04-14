@@ -1,0 +1,289 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.40;
+}
+
+nav {
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    justify-content: left;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.p-fixed {
+    position: fixed;
+}
+
+.container-satu {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 40px;
+    padding: 20px;
+}
+
+.container-dua {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px;
+    margin-left: 40px; 
+    /* width: 700px;
+    margin: 0 0 0 274px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex; */
+}
+
+.kolom-utama {
+    max-width: 750px;
+    margin: 3px 0 0 40px;
+    padding-right: 16px;
+    flex: 3;
+    order: 2;
+    flex-direction: row;
+    font-size: 14px;
+}
+
+.listTeori {
+    margin: 10px 0 10px 45px;
+}
+
+.sidebar-satu {
+    flex: 1;
+    order: 1;
+    margin-left: -15px;
+    margin: 20px 0 0 0;
+    font-size: 14px;
+    display: flex;
+}
+
+#list a {
+    text-decoration: none;
+    color: #3f3f3f;
+}
+
+#list a:hover {
+    color: blue;
+}
+
+.sidebar-satu ul {
+    list-style: none;
+}
+
+.iconMenu {
+    display: none;
+    font-weight: bold;
+}
+
+.sidebar-dua {
+    flex: 1;
+    order: 3;
+    text-align: center;
+    margin-left: 17px;
+    font-size: 14px;
+    margin: 30px 0 0 40px;
+}
+
+.detail {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.gambar-aside {
+    max-width: 200px;
+    height: auto;
+}
+
+.detail,
+h4 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+aside p {
+    font-size: 13px;
+}
+
+.sidebar-group {
+    font-size: 12px;
+    list-style: none;
+    text-align: left;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    left: 58px;
+    text-align: left;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+#menuList {
+    display: none;
+    padding: 16px 16px;
+    box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+
+.menu {
+    height: 20px;
+    display: flex;
+    margin: auto 0;
+    margin-right: 16px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+#listHalaman {
+    display: none;
+    padding: 16px 16px;
+    box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+
+.iconMenu {
+    position: fixed;
+}
+
+.iconMenu ul {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 30px;
+    text-align: left;
+    background-color: #ffffff;
+    z-index: 1;
+    flex-direction: column;
+}
+
+/* Scroll box vertikal */
+#listHalaman {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#listHalaman h4 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+#listHalaman li {
+    margin-bottom: 5px;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+#listHalaman a {
+    text-decoration: none;
+    color: #3f3f3f;
+}
+
+#listHalaman a:hover {
+    color: blue;
+}
+
+.logo {
+    width: px;
+    height: 40px;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+    height: 35px;
+    line-height: 35px;
+}
+
+.search input {
+    border: 2px solid #ddd;
+    outline: none;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 15px;
+    width: 350px;
+}
+
+.search input:hover {
+    border: 2px solid #cac9c9;
+}
+
+.search button {
+    border: 2px solid #ddd;
+    background: #ffffff;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    height: 35px;
+    padding: 8px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #f7f7f7;
+    border: 2px solid #cac9c9;
+}
+
+main article h1,
+h2 {
+    font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif Pro', serif;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+hr {
+    width: 90%;
+    border: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.underline-judul {
+    margin: 10px 0 20px 0;
+}
+
+/* .underline-navbar {
+    color: black;
+    width: 100%;
+    margin-top: 1px;
+} */
+
+.copyright {
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size: 13px;
+}
+
+/* responsive */
+@media(max-width: 1000px) {
+    .p-fixed {
+        display: none;
+    }
+
+    .iconMenu {
+        height: 25px;
+        display: flex;
+        cursor: pointer;
+        margin-right: 40px;
+    }
+}
